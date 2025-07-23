@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Fietsherstel Chatbot</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Fietsherstelbot Chat (REST API)</title>
+  <script src="https://cdn.jsdelivr.net/npm/@botfront/rasa-webchat/lib/index.min.js"></script>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+  </style>
 </head>
 <body>
-    <div id="chat-container">
-        <div id="chat-log">
-            <div class="bot-message">Welkom! Stel je vraag over fietsherstel.</div>
-            <img src="images/fiets_algemeen.png" alt="Algemene fiets">
-        </div>
-        <div id="input-area">
-            <input type="text" id="user-input" placeholder="Typ je bericht...">
-            <button id="send-button">Verstuur</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    initPayload: "/start",
+    customData: { language: "nl" }, // Optioneel
+    socketUrl: null,  // Zet uit
+    restApi: "https://fietsherstelbot.onrender.com/webhooks/rest/webhook",
+    title: "Fietsherstelbot",
+    subtitle: "Chat met je fietsherstel assistent"
+  });
+</script>
+
+<div id="webchat"></div>
+
 </body>
-</html>>
+</html>
