@@ -1,0 +1,50 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crankas_vervangen\"}}]": "utter_crankas_vervangen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crankas_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_crankas_vervangen\"}, \"user\": {\"intent\": \"crankas_vervangen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ketting_vervangen\"}}]": "utter_ketting_vervangen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ketting_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_ketting_vervangen\"}, \"user\": {\"intent\": \"ketting_vervangen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pedalen_vervangen\"}}]": "utter_pedalen_vervangen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pedalen_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_pedalen_vervangen\"}, \"user\": {\"intent\": \"pedalen_vervangen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"stuur_verhogen\"}}]": "utter_stuur_verhogen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"stuur_verhogen\"}}, {\"prev_action\": {\"action_name\": \"utter_stuur_verhogen\"}, \"user\": {\"intent\": \"stuur_verhogen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"voorderailleur_afstellen\"}}]": "utter_voorderailleur_afstellen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"voorderailleur_afstellen\"}}, {\"prev_action\": {\"action_name\": \"utter_voorderailleur_afstellen\"}, \"user\": {\"intent\": \"voorderailleur_afstellen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"achterderailleur_afstellen\"}}]": "utter_achterderailleur_afstellen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"achterderailleur_afstellen\"}}, {\"prev_action\": {\"action_name\": \"utter_achterderailleur_afstellen\"}, \"user\": {\"intent\": \"achterderailleur_afstellen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"freewheel_vervangen\"}}]": "utter_freewheel_vervangen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"freewheel_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_freewheel_vervangen\"}, \"user\": {\"intent\": \"freewheel_vervangen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"rem_afstellen\"}}]": "utter_rem_afstellen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"rem_afstellen\"}}, {\"prev_action\": {\"action_name\": \"utter_rem_afstellen\"}, \"user\": {\"intent\": \"rem_afstellen\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cassette_vervangen\"}}]": "utter_cassette_vervangen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cassette_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_cassette_vervangen\"}, \"user\": {\"intent\": \"cassette_vervangen\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"stuur_verhogen\"}}, {\"prev_action\": {\"action_name\": \"utter_stuur_verhogen\"}, \"user\": {\"intent\": \"stuur_verhogen\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"voorderailleur_afstellen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"achterderailleur_afstellen\"}}, {\"prev_action\": {\"action_name\": \"utter_achterderailleur_afstellen\"}, \"user\": {\"intent\": \"achterderailleur_afstellen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pedalen_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"rem_afstellen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"pedalen_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_pedalen_vervangen\"}, \"user\": {\"intent\": \"pedalen_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"achterderailleur_afstellen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cassette_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ketting_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_ketting_vervangen\"}, \"user\": {\"intent\": \"ketting_vervangen\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"rem_afstellen\"}}, {\"prev_action\": {\"action_name\": \"utter_rem_afstellen\"}, \"user\": {\"intent\": \"rem_afstellen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cassette_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_cassette_vervangen\"}, \"user\": {\"intent\": \"cassette_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crankas_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"stuur_verhogen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ketting_vervangen\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"voorderailleur_afstellen\"}}, {\"prev_action\": {\"action_name\": \"utter_voorderailleur_afstellen\"}, \"user\": {\"intent\": \"voorderailleur_afstellen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"freewheel_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_freewheel_vervangen\"}, \"user\": {\"intent\": \"freewheel_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"freewheel_vervangen\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"crankas_vervangen\"}}, {\"prev_action\": {\"action_name\": \"utter_crankas_vervangen\"}, \"user\": {\"intent\": \"crankas_vervangen\"}}]"
+    ]
+  }
+}

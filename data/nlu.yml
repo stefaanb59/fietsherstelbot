@@ -1,0 +1,82 @@
+version: "3.1"
+nlu:
+- intent: fietsherstelling
+  examples: |
+    - Wat kan ik allemaal herstellen aan mijn fiets?
+    - Welke herstellingen bieden jullie aan?
+    - Kun je mij helpen met een fietsherstelling?
+    - Ik wil graag iets herstellen aan mijn fiets
+    - Wat voor herstellingen kan ik zelf doen?
+
+- intent: rem_afstellen
+  examples: |
+    - Hoe stel ik mijn remmen goed af?
+    - De remmen van mijn fiets werken niet goed
+    - Mijn remmen moeten bijgesteld worden
+    - Kun je uitleggen hoe ik de remmen afstel?
+    - Hoe kan ik mijn rem afstellen?
+
+- intent: voorderailleur_afstellen
+  examples: |
+    - Hoe werkt het afstellen van de voorderailleur?
+    - De voorderailleur raakt de ketting
+    - Mijn voorderailleur schakelt niet goed
+    - Kun je me helpen met de voorderailleur?
+
+- intent: pedalen_vervangen
+  examples: |
+    - Hoe monteer ik nieuwe pedalen?
+    - Ik wil mijn pedalen vervangen
+    - Mijn pedalen zijn versleten
+    - Wat is de juiste manier om pedalen los te draaien?
+
+- intent: crankas_vervangen
+  examples: |
+    - Hoe haal ik de crankas eruit?
+    - De trapas van mijn fiets is versleten
+    - Mijn crankstel moet vervangen worden
+    - Kun je uitleg geven over de crankas vervangen?
+
+- intent: stuur_verhogen
+  examples: |
+    - Mijn stuur staat te laag
+    - Hoe verhoog ik mijn stuur?
+    - Het stuur moet omhoog
+    - Stuur hoger zetten
+    - Kan het stuur van mijn fiets omhoog?
+
+- intent: ketting_vervangen
+  examples: |
+    - Hoe weet ik of mijn ketting versleten is?
+    - Mijn ketting springt af
+    - Wat is de juiste lengte voor een nieuwe ketting?
+    - Kun je uitleg geven over ketting vervangen?
+
+- intent: cassette_vervangen
+  examples: |
+    - Mijn cassette is versleten
+    - Hoe vervang ik de achtertandwielen?
+    - Nieuwe cassette monteren
+    - De ketting loopt niet soepel over de cassette
+
+- intent: freewheel_vervangen
+  examples: |
+    - Hoe haal ik een freewheel los?
+    - Mijn freewheel maakt veel lawaai
+    - Hoe weet ik of ik een freewheel of cassette heb?
+    - Kun je uitleg geven over het vervangen van een freewheel?
+
+- intent: achterderailleur_afstellen
+  examples: |
+    - Hoe stel ik de achterderailleur af?
+    - Mijn achterderailleur schakelt slecht
+    - De ketting springt bij het schakelen achteraan
+    - Kun je mij helpen met het afstellen van de achterderailleur?
+
+- intent: nlu_fallback
+  examples: |
+    - Kan je me helpen met iets anders?
+    - Wat kan ik nog meer doen?
+    - Ik heb geen specifieke vraag.
+    - Hoe stel ik mijn fiets in?
+

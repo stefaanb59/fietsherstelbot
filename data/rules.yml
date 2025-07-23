@@ -1,0 +1,51 @@
+version: "3.1"
+rules:
+  - rule: Antwoord op algemene vraag over fietsherstelling
+    steps:
+      - intent: fietsherstelling
+      - action: action_geef_herstelling  # Zorg ervoor dat de actie consistent is
+
+  - rule: Antwoord op vraag over rem afstellen
+    steps:
+      - intent: rem_afstellen
+      - action: utter_rem_afstellen
+
+  - rule: Antwoord op vraag over voorderailleur afstellen
+    steps:
+      - intent: voorderailleur_afstellen
+      - action: utter_voorderailleur_afstellen
+
+  - rule: Antwoord op vraag over pedalen vervangen
+    steps:
+      - intent: pedalen_vervangen
+      - action: utter_pedalen_vervangen
+
+  - rule: Antwoord op vraag over crankas vervangen
+    steps:
+      - intent: crankas_vervangen
+      - action: utter_crankas_vervangen
+
+  - rule: Antwoord op vraag over stuur verhogen
+    steps:
+      - intent: stuur_verhogen
+      - action: utter_stuur_verhogen
+
+  - rule: Antwoord op vraag over ketting vervangen
+    steps:
+      - intent: ketting_vervangen
+      - action: utter_ketting_vervangen
+
+  - rule: Antwoord op vraag over cassette vervangen
+    steps:
+      - intent: cassette_vervangen
+      - action: utter_cassette_vervangen
+
+  - rule: Antwoord op vraag over freewheel vervangen
+    steps:
+      - intent: freewheel_vervangen
+      - action: utter_freewheel_vervangen
+
+  - rule: Antwoord op vraag over achterderailleur afstellen
+    steps:
+      - intent: achterderailleur_afstellen
+      - action: utter_achterderailleur_afstellen

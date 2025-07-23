@@ -1,0 +1,59 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "achterderailleur_afstellen": 0,
+        "back": 1,
+        "cassette_vervangen": 2,
+        "crankas_vervangen": 3,
+        "fietsherstelling": 4,
+        "freewheel_vervangen": 5,
+        "ketting_vervangen": 6,
+        "nlu_fallback": 7,
+        "out_of_scope": 8,
+        "pedalen_vervangen": 9,
+        "rem_afstellen": 10,
+        "restart": 11,
+        "session_start": 12,
+        "stuur_verhogen": 13,
+        "voorderailleur_afstellen": 14
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_fietsherstelling": 13,
+        "utter_rem_afstellen": 14,
+        "utter_voorderailleur_afstellen": 15,
+        "utter_pedalen_vervangen": 16,
+        "utter_crankas_vervangen": 17,
+        "utter_stuur_verhogen": 18,
+        "utter_ketting_vervangen": 19,
+        "utter_cassette_vervangen": 20,
+        "utter_freewheel_vervangen": 21,
+        "utter_achterderailleur_afstellen": 22,
+        "utter_default": 23,
+        "action_geef_herstelling": 24,
+        "action_geef_herstellingult": 25
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": null
+}

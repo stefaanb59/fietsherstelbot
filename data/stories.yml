@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+  - story: Herstelling fietsen
+    steps:
+      - intent: fietsherstelling
+      - action: action_geef_herstelling  # Zorg ervoor dat de actie consistent is
+
+  - story: Vraag over rem afstellen
+    steps:
+      - intent: rem_afstellen
+      - action: utter_rem_afstellen
+
+  - story: Vraag over voorderailleur afstellen
+    steps:
+      - intent: voorderailleur_afstellen
+      - action: utter_voorderailleur_afstellen
+
+  - story: Vraag over pedalen vervangen
+    steps:
+      - intent: pedalen_vervangen
+      - action: utter_pedalen_vervangen
+
+  - story: Vraag over crankas vervangen
+    steps:
+      - intent: crankas_vervangen
+      - action: utter_crankas_vervangen
+
+  - story: Vraag over stuur verhogen
+    steps:
+      - intent: stuur_verhogen
+      - action: utter_stuur_verhogen
+
+  - story: Vraag over ketting vervangen
+    steps:
+      - intent: ketting_vervangen
+      - action: utter_ketting_vervangen
+
+  - story: Vraag over cassette vervangen
+    steps:
+      - intent: cassette_vervangen
+      - action: utter_cassette_vervangen
+
+  - story: Vraag over freewheel vervangen
+    steps:
+      - intent: freewheel_vervangen
+      - action: utter_freewheel_vervangen
+
+  - story: Vraag over achterderailleur afstellen
+    steps:
+      - intent: achterderailleur_afstellen
+      - action: utter_achterderailleur_afstellen

@@ -1,0 +1,26 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"begroeting\"}}]": "utter_begroeting",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"begroeting\"}}, {\"prev_action\": {\"action_name\": \"utter_begroeting\"}, \"user\": {\"intent\": \"begroeting\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vraag_herstelling\"}}]": "action_geef_herstelling",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vraag_herstelling\"}}, {\"prev_action\": {\"action_name\": \"action_geef_herstelling\"}, \"user\": {\"intent\": \"vraag_herstelling\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dankwoord\"}}]": "utter_dankwoord",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dankwoord\"}}, {\"prev_action\": {\"action_name\": \"utter_dankwoord\"}, \"user\": {\"intent\": \"dankwoord\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dankwoord\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vraag_herstelling\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vraag_herstelling\"}}, {\"prev_action\": {\"action_name\": \"action_geef_herstelling\"}, \"user\": {\"intent\": \"vraag_herstelling\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"dankwoord\"}}, {\"prev_action\": {\"action_name\": \"utter_dankwoord\"}, \"user\": {\"intent\": \"dankwoord\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"begroeting\"}}, {\"prev_action\": {\"action_name\": \"utter_begroeting\"}, \"user\": {\"intent\": \"begroeting\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"begroeting\"}}]"
+    ]
+  }
+}
