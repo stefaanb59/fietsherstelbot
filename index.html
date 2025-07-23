@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Fietsherstelbot Chat (REST API)</title>
-  <script src="https://cdn.jsdelivr.net/npm/@botfront/rasa-webchat/lib/index.min.js"></script>
+  <script src="https://unpkg.com/@botfront/rasa-webchat@1.0.1/lib/index.min.js"></script>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; }
   </style>
@@ -13,9 +13,7 @@
 <script>
   WebChat.default.init({
     selector: "#webchat",
-    initPayload: "/start",
-    customData: { language: "nl" }, // Optioneel
-    socketUrl: null,  // Zet uit
+    initPayloag
     restApi: "https://fietsherstelbot.onrender.com/webhooks/rest/webhook",
     title: "Fietsherstelbot",
     subtitle: "Chat met je fietsherstel assistent"
