@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-EXPOSE $PORT # Dit is optioneel voor Render, maar goede praktijk
-# Gebruik de $PORT omgevingvariabele van Render
+# The original EXPOSE line is removed.
+# This CMD line correctly uses the Render environment variable.
 CMD ["rasa", "run", "--enable-api", "-p", "$PORT", "--cors", "*", "--host", "0.0.0.0"]
