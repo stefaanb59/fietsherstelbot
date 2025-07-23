@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 action_endpoint:
   url: "http://localhost:5055/webhook"
-=======
-action_endpoint:
-  url: "http://localhost:5055/webhook"
->>>>>>> 6b875d3e0abd4077c9ce1f8dcffb3992fee97b6e
