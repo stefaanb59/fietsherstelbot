@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+version: "3.1"
+language: nl
+
+pipeline:
+- name: "WhitespaceTokenizer"
+- name: "RegexFeaturizer"
+- name: "LexicalSyntacticFeaturizer"
+- name: "CountVectorsFeaturizer"
+- name: "DIETClassifier"
+  epochs: 100
+- name: "EntitySynonymMapper"
+- name: "ResponseSelector"
+  epochs: 100
+  constrain_similarities: true
+
+policies:
+- name: "MemoizationPolicy"
+- name: "RulePolicy"
+  core_fallback_threshold: 0.3
+  core_fallback_action_name: "utter_default"
+  enable_fallback_intent: true
+  fallback_intent_name: "nlu_fallback"
+- name: "TEDPolicy"
+  max_history: 5
+
+assistant_id: 20250507-100200-grim-shot
+=======
+version: "3.1"
+language: nl
+
+pipeline:
+- name: "WhitespaceTokenizer"
+- name: "RegexFeaturizer"
+- name: "LexicalSyntacticFeaturizer"
+- name: "CountVectorsFeaturizer"
+- name: "DIETClassifier"
+  epochs: 100
+- name: "EntitySynonymMapper"
+- name: "ResponseSelector"
+  epochs: 100
+  constrain_similarities: true
+
+policies:
+- name: "MemoizationPolicy"
+- name: "RulePolicy"
+  core_fallback_threshold: 0.3
+  core_fallback_action_name: "utter_default"
+  enable_fallback_intent: true
+  fallback_intent_name: "nlu_fallback"
+- name: "TEDPolicy"
+  max_history: 5
+
+assistant_id: 20250507-100200-grim-shot
+>>>>>>> 6b875d3e0abd4077c9ce1f8dcffb3992fee97b6e

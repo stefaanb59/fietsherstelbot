@@ -1,0 +1,158 @@
+version: "3.1"
+
+intents:
+  - fietsherstelling
+  - nlu_fallback
+  - rem_afstellen
+  - voorderailleur_afstellen
+  - pedalen_vervangen
+  - crankas_vervangen
+  - stuur_verhogen
+  - ketting_vervangen
+  - cassette_vervangen
+  - freewheel_vervangen
+  - achterderailleur_afstellen
+  - wat_kunnen_we_vragen  # Nieuwe intent
+
+responses:
+  utter_wat_kunnen_we_vragen:
+    - text: |
+        Je kunt de volgende vragen stellen:
+        - Hoe stel ik de remmen af?
+        - Hoe stel ik de voorderailleur af?
+        - Hoe vervang ik de pedalen?
+        - Hoe vervang ik de crankas?
+        - Hoe verhoog ik het stuur?
+        - Hoe vervang ik de ketting?
+        - Hoe vervang ik de cassette?
+        - Hoe vervang ik het freewheel?
+        - Hoe stel ik de achterderailleur af?
+        - Wil je ergens mee helpen?
+  utter_fietsherstelling:
+    - text: |
+        Oké, ik kan je helpen met de volgende herstellingen:
+        - rem afstellen
+        - voorderailleur afstellen
+        - pedalen vervangen
+        - crankas vervangen
+        - stuur verhogen
+        - ketting vervangen
+        - cassette vervangen
+        - freewheel vervangen
+        - achterderailleur afstellen
+        Waar wil je meer over weten?
+
+  utter_rem_afstellen:
+    - text: |
+        ➡️ Rem afstellen (algemeen):
+        1. Controleer de kabelspanning: deze moet correct zijn voor het type rem.
+        2. Zorg ervoor dat de remblokken of remschoenen goed uitgelijnd zijn met het remoppervlak (velg of schijf).
+        3. Stel de afstand van de remblokken/schoenen tot het remoppervlak af met de stelschroeven of andere mechanismen.
+        4. Controleer of de remmen niet slepen wanneer ze niet worden ingedrukt.
+        5. Test de remwerking: de remmen moeten effectief en veilig tot stilstand komen.
+        ℹ️ Let op: De specifieke stappen kunnen variëren afhankelijk van het type rem (V-brake, schijfrem, cantilever, etc.). Raadpleeg indien nodig een specifieke handleiding voor jouw type rem.
+
+  utter_voorderailleur_afstellen:
+    - text: |
+        ➡️ Voorderailleur afstellen:
+        1. Zet ketting op kleinste kettingblad voor en grootste tandwiel achter.
+        2. Stel L-schroef af zodat ketting niet tegen kooi loopt.
+        3. Zet ketting op grootste kettingblad en kleinste tandwiel achter.
+        4. Stel H-schroef af zodat ketting niet tegen kooi loopt.
+        5. Controleer middenpositie en kabelspanning.
+        6. Test schakelgedrag en stel eventueel bij.
+
+  utter_pedalen_vervangen:
+    - text: |
+        ➡️ Pedalen vervangen:
+        1. Gebruik een pedaalsleutel of inbussleutel.
+        2. Linkerpedaal heeft linkse draad (links losdraaien).
+        3. Draai beide pedalen los.
+        4. Reinig schroefdraad en breng vet aan.
+        5. Monteer nieuwe pedalen: rechts met de klok mee, links tegen de klok in.
+        6. Draai stevig vast.
+        7. Test op kraak- of spelinggeluiden.
+
+  utter_crankas_vervangen:
+    - text: |
+        ➡️ Crankas vervangen:
+        1. Verwijder pedalen.
+        2. Demonteer crankarmen met cranktrekker.
+        3. Verwijder oude crankas met geschikt gereedschap.
+        4. Reinig het trapashuis.
+        5. Plaats nieuwe crankas (let op schroefdraadtype: BSA/ITA).
+        6. Draai aan met juiste aanhaalmoment.
+        7. Monteer crankarmen opnieuw, goed invetten.
+        8. Plaats pedalen terug.
+        9. Test trapbeweging op speling.
+
+  utter_stuur_verhogen:
+    - text: |
+        ➡️ Stuur verhogen:
+        1. Controleer type stuurpen: quill of Ahead.
+        2. Bij quill: bout bovenop losdraaien, tik lichtjes, trek omhoog.
+        3. Bij Ahead: bouten los, spacers toevoegen of stuurpen verplaatsen.
+        4. Alles aandraaien met juiste kracht.
+        5. Controleer uitlijning en test soepelheid.
+
+  utter_ketting_vervangen:
+    - text: |
+        ➡️ Ketting vervangen:
+        1. Schakel naar kleinste tandwielen.
+        2. Zoek missing link of verwijder schakel met kettingpons.
+        3. Meet nieuwe ketting: 2 schakels extra bij volledig gestrekte ketting.
+        4. Kort ketting in.
+        5. Leg ketting correct om tandwielen.
+        6. Verbind ketting met missing link of klink schakel.
+        7. Test soepelheid en schakelen.
+
+  utter_cassette_vervangen:
+    - text: |
+        ➡️ Cassette vervangen:
+        1. Verwijder achterwiel.
+        2. Gebruik cassetteafnemer en kettingzweep om lockring los te draaien.
+        3. Reinig body.
+        4. Plaats nieuwe cassette.
+        5. Lockring stevig vastdraaien.
+        6. Monteer wiel en test schakelen.
+
+  utter_freewheel_vervangen:
+    - text: |
+        ➡️ Freewheel vervangen:
+        1. Verwijder achterwiel.
+        2. Gebruik passende freewheelafnemer.
+        3. Draai freewheel los.
+        4. Reinig wielschroefdraad.
+        5. Plaats nieuwe freewheel, handvast.
+        6. Monteer wiel.
+        7. Test trappen en remmen.
+
+  utter_achterderailleur_afstellen:
+    - text: |
+        ➡️ Achterderailleur afstellen:
+        1. Zet ketting op kleinste achtertandwiel.
+        2. Stel H-schroef af zodat derailleurwieltjes netjes onder kleinste tandwiel staan.
+        3. Schakel naar grootste achtertandwiel.
+        4. Stel L-schroef af zodat derailleurwieltjes netjes onder grootste tandwiel staan.
+        5. Pas kabelspanning aan indien nodig.
+        6. Controleer B-schroef (afstand derailleur/cassette).
+        7. Test schakelen door alle versnellingen.
+
+  utter_default:
+    - text: "Sorry, ik begrijp dat niet. Ik kan je helpen met informatie over fietsherstellingen."
+
+actions:
+  - utter_fietsherstelling
+  - utter_rem_afstellen
+  - utter_voorderailleur_afstellen
+  - utter_pedalen_vervangen
+  - utter_crankas_vervangen
+  - utter_stuur_verhogen
+  - utter_ketting_vervangen
+  - utter_cassette_vervangen
+  - utter_freewheel_vervangen
+  - utter_achterderailleur_afstellen
+  - utter_default
+  - action_geef_herstelling
+  - action_fietsherstelling
+
