@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-# Gebruik een statisch poortnummer voor EXPOSE
 EXPOSE 10000
 
-# Gebruik de $PORT omgevingvariabele van Render voor de CMD
-CMD ["rasa", "run", "--enable-api", "-p", "$PORT", "--cors", "*", "--host", "0.0.0.0"]
+# Render zet de $PORT environment variable in tijdens runtime
+CMD ["sh", "-c", "rasa run --enable-api --port $PORT --cors '*' --host 0.0.0.0"]
