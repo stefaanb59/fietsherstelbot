@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html {
     height: 100%; /* Zorg ervoor dat body en html de volledige hoogte innemen */
     margin: 0;     /* Verwijder standaard marges */
@@ -69,4 +70,77 @@ body, html {
     height: auto; /* Behoud de aspect ratio */
     display: block; /* Zorg ervoor dat de afbeelding op een nieuwe regel staat */
     margin: 10px auto; /* Centreer de afbeelding horizontaal en voeg wat marge toe */
+=======
+body, html {
+    height: 100%; /* Zorg ervoor dat body en html de volledige hoogte innemen */
+    margin: 0;     /* Verwijder standaard marges */
+    padding:0    /* Verwijder standaard padding */
+    overflow: hidden; /* Voorkom scrollbars op de pagina zelf */
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100;      /* Neem de volledige breedte in */
+    height: 100%;     /* Neem de volledige hoogte in */
+    background-color: #f0f0f0; /* Optionele achtergrondkleur */
+}
+
+#chat-log {
+    flex-grow: 1;      /* Laat de chat-log groeien om de beschikbare ruimte in te nemen */
+    padding: 10px;
+    overflow-y: auto;  /* Voeg een verticale scrollbar toe als de inhoud te lang wordt */
+}
+
+#input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc; /* Optionele scheidingslijn */
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#send-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bot-message {
+    background-color: #e0f7fa;
+    color: #000;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    align-self: flex-start; /* Plaats berichten links */
+    max-width: 80%;
+    word-break: break-word;
+    white-space: pre-wrap; /* Behoudt witruimte en nieuwe regels */
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    color: #000;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    align-self: flex-end; /* Plaats berichten rechts */
+    max-width: 80%;
+    word-break: break-word;
+}
+#chat-log img {
+    max-width: 80%; /* Maak de afbeelding maximaal 80% van de breedte van de chatlog */
+    height: auto; /* Behoud de aspect ratio */
+    display: block; /* Zorg ervoor dat de afbeelding op een nieuwe regel staat */
+    margin: 10px auto; /* Centreer de afbeelding horizontaal en voeg wat marge toe */
+>>>>>>> 6b875d3e0abd4077c9ce1f8dcffb3992fee97b6e
 }
