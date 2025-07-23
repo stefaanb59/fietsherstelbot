@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-EXPOSE 5005
-
-CMD ["rasa", "run", "--enable-api", "-p", "5005", "--cors", "*", "--host", "0.0.0.0"]
+EXPOSE $PORT # Dit is optioneel voor Render, maar goede praktijk
+# Gebruik de $PORT omgevingvariabele van Render
+CMD ["rasa", "run", "--enable-api", "-p", "$PORT", "--cors", "*", "--host", "0.0.0.0"]
