@@ -13,6 +13,5 @@ async def favicon(request):
 async def webhook(request):
     # Je webhook-code hier
     return json({"status": "ok"})
-
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5055)
+    app.run(host="0.0.0.0", port=1000)
